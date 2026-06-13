@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Feedback | KiwiSafe Test &amp; Tag</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span>
+      KiwiSafe Test &amp; Tag
+    </a>
+    <div class="nav-cta"><a href="index.html" class="btn btn-ghost">Back to site</a></div>
+  </div>
+</header>
+
+<div class="review-wrap">
+  <div class="avatar-big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+  <h1>Tell us directly</h1>
+  <p>If something fell short, we'd rather hear it first so we can put it right. This goes straight to the owner — not online.</p>
+  <form class="review-card" style="text-align:left" action="https://formsubmit.co/owner@kiwisafetestandtag.co.nz" method="POST">
+    <input type="hidden" name="_subject" value="Private feedback — KiwiSafe Test & Tag">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name">
+    </div>
+    <div class="field">
+      <label for="email">Email or phone</label>
+      <input id="email" name="contact" type="text" placeholder="So we can follow up">
+    </div>
+    <div class="field">
+      <label for="msg">What happened?</label>
+      <textarea id="msg" name="message" placeholder="Tell us what we could have done better."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send feedback</button>
+  </form>
+</div>
+</body>
+</html>

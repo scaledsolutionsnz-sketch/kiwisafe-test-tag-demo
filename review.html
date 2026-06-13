@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave a Review | KiwiSafe Test &amp; Tag</title>
+<meta name="description" content="Leave a review for KiwiSafe Test & Tag — Christchurch electrical test and tag.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span>
+      KiwiSafe Test &amp; Tag
+    </a>
+    <div class="nav-cta"><a href="index.html" class="btn btn-ghost">Back to site</a></div>
+  </div>
+</header>
+
+<div class="review-wrap">
+  <div class="avatar-big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
+  <h1>How did we do?</h1>
+  <p>Thanks for choosing KiwiSafe Test &amp; Tag. Your feedback helps other Christchurch businesses find a crew they can trust — it only takes a minute.</p>
+  <div class="review-stars" id="stars" role="group" aria-label="Rate from 1 to 5 stars">
+    <svg data-v="1" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+    <svg data-v="2" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+    <svg data-v="3" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+    <svg data-v="4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+    <svg data-v="5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+  </div>
+  <div class="review-card">
+    <p style="color:var(--muted);margin-bottom:18px">Tap the stars above, then leave your review on Google.</p>
+    <a href="#" class="btn btn-primary" style="width:100%;justify-content:center" id="googleBtn">Continue to Google Reviews</a>
+    <p style="font-size:13px;color:var(--muted);margin-top:16px;margin-bottom:0">This is a demo review funnel. The Google link is a placeholder until the live listing is connected.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var stars=document.querySelectorAll('#stars svg');
+  var chosen=0;
+  function paint(n){stars.forEach(function(s,idx){s.style.color=idx<n?'#f5a623':'#d8ddd8';});}
+  paint(0);
+  stars.forEach(function(s){
+    s.addEventListener('mouseenter',function(){paint(+s.dataset.v);});
+    s.addEventListener('click',function(){chosen=+s.dataset.v;paint(chosen);});
+  });
+  document.getElementById('stars').addEventListener('mouseleave',function(){paint(chosen);});
+})();
+</script>
+</body>
+</html>
